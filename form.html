@@ -28,17 +28,250 @@
 <body>
 
     <!-- Header -->
-    <header>
+    <header class="collapse-md">
+
+        <!-- Navigator -->
+        <nav class="navbar navbar-expand-md bg-dark d-md-none" data-bs-theme="dark">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">
+                    Bootstrap Dashboard
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Dashboard
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="sponsorship.html">
+                                Sponsorships
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                Products
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="form.html">
+                                New Product
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mb-4" href="#">
+                                Customers
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Settings
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Profile
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Exit
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+        <!-- /Navigator -->
 
     </header>
     <!-- /Header -->
 
     <!-- Main -->
-    <main>
+    <main class="container-fluid">
+
+        <div class="row">
+
+            <!-- Sidebar Menu -->
+            <div class="d-flex flex-column d-none d-md-flex p-3 text-bg-dark col-md-4 col-lg-3">
+
+                <a href="index.html" class="d-flex align-items-center mb-1 mb-md-0 me-md-auto text-white text-decoration-none">
+
+                    <span class="fs-4">
+                        Bootstrap Dashboard
+                    </span>
+
+                </a>
+
+                <hr>
+
+                <ul class="nav nav-pills flex-column mb-1">
+
+
+                    <li>
+                        <a href="#" class="nav-link text-white d-flex align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="me-3" viewBox="0 0 16 16">
+
+                                <path
+                                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+
+                            </svg>
+
+                            Dashboard
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sponsorship.html" class="nav-link text-white d-flex align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="me-3" viewBox="0 0 16 16">
+
+                                <path fill-rule="evenodd"
+                                    d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07" />
+
+                            </svg>
+
+                            Sponsorships
+
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a href="index.html" class="nav-link text-white d-flex align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="me-3" viewBox="0 0 16 16">
+
+                                <path
+                                    d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
+
+                            </svg>
+
+                            Products
+
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="form.html" class="nav-link active" aria-current="page">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="me-3" viewBox="0 0 16 16">
+
+                                <path fill-rule="evenodd"
+                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+
+                            </svg>
+
+                            New Products
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link text-white">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="me-3" viewBox="0 0 16 16">
+
+                                <path
+                                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+
+                            </svg>
+
+                            Customers
+
+                        </a>
+                    </li>
+
+                </ul>
+
+                <hr>
+
+                <div class="dropdown">
+
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+
+                        <img src="https://picsum.photos/id/237/200/300" alt="Profile image" width="32" height="32" class="rounded-circle me-2">
+
+                        <strong>Sandro Sallusti</strong>
+
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+
+                        <li>
+                            <a class="dropdown-item" href="#">Settings</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">Profile</a>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">Sign out</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <!-- /Sidebar Menu -->
+
+            <!-- Main Content -->
+            <div class="col-md-8 col-lg-9 overflow-scroll vh-100">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ullam, nesciunt possimus neque molestiae officia quam libero unde repudiandae minima non veniam doloribus odio? Optio esse modi nam fugit aut?
+                Dignissimos cupiditate, explicabo aspernatur porro quis in corrupti ea enim quas eaque inventore fugiat laboriosam quaerat dolorem fuga, at assumenda maxime est. Distinctio cumque magni explicabo pariatur voluptate reprehenderit praesentium.
+                Accusantium nisi ipsum officia, sit quaerat adipisci exercitationem, repudiandae rerum itaque rem dolores modi! Praesentium possimus iste esse? Suscipit explicabo accusantium vero nisi nesciunt labore laboriosam beatae provident repellendus rerum!
+                Voluptas, magni est officia assumenda dicta numquam repellendus commodi rerum cupiditate exercitationem vel earum aut eos quae sapiente incidunt, magnam soluta quas quod voluptatibus impedit harum recusandae rem? Incidunt, dolore!
+                Omnis id veniam architecto excepturi. Dolor temporibus, culpa ullam fugit deserunt asperiores quos officiis, cumque, ab labore ex enim totam ipsam expedita veniam molestias cum vitae commodi cupiditate dolorum eligendi?
+                Quae animi harum eos cum reprehenderit quidem, totam, fugit incidunt cumque placeat laborum voluptatum fuga. Eum vero saepe sint porro asperiores, dolore, necessitatibus praesentium, iusto hic explicabo veritatis ipsum eaque!
+                Animi ipsum quos nemo ratione cum cupiditate. Quisquam, quasi assumenda. Doloremque, sint iure voluptatibus, libero voluptate et perferendis expedita quod placeat quasi repudiandae. Quas, veritatis. Eius in quo ullam facilis.
+                Mollitia, nam dolorum! Quo, pariatur dolorum! Ipsa, numquam! Quaerat voluptatum voluptates animi perferendis, ipsum harum obcaecati laborum alias similique iure ratione, fuga provident? Dolorum necessitatibus itaque, possimus vero minima atque!
+                
+            </div>
+            <!-- /Main Content -->
+
+        </div>
 
     </main>
     <!-- /Main -->
-    
+
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
