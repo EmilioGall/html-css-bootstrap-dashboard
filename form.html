@@ -119,7 +119,8 @@
             <!-- Sidebar Menu -->
             <div class="d-flex flex-column d-none d-md-flex p-3 text-bg-dark col-md-4 col-lg-3">
 
-                <a href="index.html" class="d-flex align-items-center mb-1 mb-md-0 me-md-auto text-white text-decoration-none">
+                <a href="index.html"
+                    class="d-flex align-items-center mb-1 mb-md-0 me-md-auto text-white text-decoration-none">
 
                     <span class="fs-4">
                         Bootstrap Dashboard
@@ -223,7 +224,8 @@
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
                         data-bs-toggle="dropdown" aria-expanded="false">
 
-                        <img src="https://picsum.photos/id/237/200/300" alt="Profile image" width="32" height="32" class="rounded-circle me-2">
+                        <img src="https://picsum.photos/id/237/200/300" alt="Profile image" width="32" height="32"
+                            class="rounded-circle me-2">
 
                         <strong>Sandro Sallusti</strong>
 
@@ -255,15 +257,230 @@
 
             <!-- Main Content -->
             <div class="col-md-8 col-lg-9 overflow-scroll vh-100">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ullam, nesciunt possimus neque molestiae officia quam libero unde repudiandae minima non veniam doloribus odio? Optio esse modi nam fugit aut?
-                Dignissimos cupiditate, explicabo aspernatur porro quis in corrupti ea enim quas eaque inventore fugiat laboriosam quaerat dolorem fuga, at assumenda maxime est. Distinctio cumque magni explicabo pariatur voluptate reprehenderit praesentium.
-                Accusantium nisi ipsum officia, sit quaerat adipisci exercitationem, repudiandae rerum itaque rem dolores modi! Praesentium possimus iste esse? Suscipit explicabo accusantium vero nisi nesciunt labore laboriosam beatae provident repellendus rerum!
-                Voluptas, magni est officia assumenda dicta numquam repellendus commodi rerum cupiditate exercitationem vel earum aut eos quae sapiente incidunt, magnam soluta quas quod voluptatibus impedit harum recusandae rem? Incidunt, dolore!
-                Omnis id veniam architecto excepturi. Dolor temporibus, culpa ullam fugit deserunt asperiores quos officiis, cumque, ab labore ex enim totam ipsam expedita veniam molestias cum vitae commodi cupiditate dolorum eligendi?
-                Quae animi harum eos cum reprehenderit quidem, totam, fugit incidunt cumque placeat laborum voluptatum fuga. Eum vero saepe sint porro asperiores, dolore, necessitatibus praesentium, iusto hic explicabo veritatis ipsum eaque!
-                Animi ipsum quos nemo ratione cum cupiditate. Quisquam, quasi assumenda. Doloremque, sint iure voluptatibus, libero voluptate et perferendis expedita quod placeat quasi repudiandae. Quas, veritatis. Eius in quo ullam facilis.
-                Mollitia, nam dolorum! Quo, pariatur dolorum! Ipsa, numquam! Quaerat voluptatum voluptates animi perferendis, ipsum harum obcaecati laborum alias similique iure ratione, fuga provident? Dolorum necessitatibus itaque, possimus vero minima atque!
-                
+
+                <div class="container-fluid">
+
+                    <div class="text-center my-4 mx-3">
+    
+                        <h1>Create new product profile</h1>
+    
+                        <p>
+                            The fields signd with an asterisk (*) are mandatory.
+                            <br>
+                            Images must be in PNG format and must not exceed 4MB in size.
+                        </p>
+    
+                    </div>
+    
+                    <form class="row g-3">
+    
+                        <div class="col-12 col-lg-7">
+                            
+                            <div class="mb-2">
+        
+                                <label for="name" class="form-label">
+                                    Name
+                                </label>
+                                <input type="text" class="form-control" id="name" placeholder="Hipster Tools Set">
+        
+                            </div>
+        
+                            <div class="mb-2">
+        
+                                <label for="price" class="form-label">
+                                    Price
+                                </label>
+                                <input type="text" class="form-control" id="price" placeholder="350,00 €">
+        
+                            </div>
+        
+                            <div class="mb-2">
+        
+                                <label for="label" class="form-label">
+                                    Label
+                                </label>
+                                <select class="form-select" aria-label="Default select example" id="label">
+                                    <option selected>--- Select ---</option>
+                                    <option value="label_1">Label One</option>
+                                    <option value="label_2">Label Two</option>
+                                    <option value="label_3">Label Three</option>
+                                </select>
+        
+                            </div>
+        
+                            <div class="mb-2">
+        
+                                <label for="description" class="visually-hidden">
+                                    Message
+                                </label>
+        
+                                <textarea class="form-control" id="description" rows="4" 
+                                placeholder="Insert a description of the product, max. 1000 caracters.">
+        
+                                </textarea>
+        
+                            </div>
+        
+                            <div class="input-group mb-2">
+        
+                                <input type="file" class="form-control" id="inputGroupFile02">
+        
+                                <label class="input-group-text" for="inputGroupFile02">Image</label>
+        
+                            </div>
+        
+                            <div class="btn-group fs-6 fs-md-3 col-auto" role="group" aria-label="product-state">
+        
+                                <input type="radio" class="btn-check" name="product-state" id="available" autocomplete="off" checked>
+        
+                                <label class="btn btn-outline-secondary btn-sm" for="available">
+                                    Available
+                                </label>
+        
+                                <input type="radio" class="btn-check" name="product-state" id="out-stock" autocomplete="off" checked>
+        
+                                <label class="btn btn-outline-secondary btn-sm" for="out-stock">
+                                    Out of Stock
+                                </label>
+        
+                                <input type="radio" class="btn-check" name="product-state" id="out-production" autocomplete="off" checked>
+        
+                                <label class="btn btn-outline-secondary btn-sm" for="out-production">
+                                    Out of Production
+                                </label>
+                                
+                                <input type="radio" class="btn-check" name="product-state" id="coming-soon" autocomplete="off">
+        
+                                <label class="btn btn-outline-secondary btn-sm" for="coming-soon">
+                                    Coming soon
+                                </label>
+        
+                            </div>
+
+                        </div>
+
+                        <ul class="list-group col-12 col-lg-5 mb-2">
+
+                            <li class="list-group-item">
+
+                              <input class="form-check-input me-1 mt-2" type="checkbox" value="" id="firstCheckbox">
+
+                                <label class="form-check-label" for=" for="feature_1">
+
+                                    <span class="d-block fs-4 lh-1">
+                                        Feature 1
+                                    </span>
+
+                                    <span class="fs-6 text-secondary align-top">
+                                        Small description of the feature
+                                    </span>
+
+                                </label>
+
+                            </li>
+
+                            <li class="list-group-item">
+
+                                <input class="form-check-input me-1 mt-2" type="checkbox" value="" id="firstCheckbox">
+  
+                                  <label class="form-check-label" for=" for="feature_1">
+  
+                                      <span class="d-block fs-4 lh-1">
+                                          Feature 1
+                                      </span>
+  
+                                      <span class="fs-6 text-secondary align-top">
+                                          Small description of the feature
+                                      </span>
+  
+                                  </label>
+  
+                            </li>
+
+                            <li class="list-group-item">
+
+                                <input class="form-check-input me-1 mt-2" type="checkbox" value="" id="firstCheckbox">
+  
+                                  <label class="form-check-label" for=" for="feature_1">
+  
+                                      <span class="d-block fs-4 lh-1">
+                                          Feature 1
+                                      </span>
+  
+                                      <span class="fs-6 text-secondary align-top">
+                                          Small description of the feature
+                                      </span>
+  
+                                  </label>
+  
+                            </li>
+
+                            <li class="list-group-item">
+
+                                <input class="form-check-input me-1 mt-2" type="checkbox" value="" id="firstCheckbox">
+  
+                                  <label class="form-check-label" for=" for="feature_1">
+  
+                                      <span class="d-block fs-4 lh-1">
+                                          Feature 1
+                                      </span>
+  
+                                      <span class="fs-6 text-secondary align-top">
+                                          Small description of the feature
+                                      </span>
+  
+                                  </label>
+  
+                            </li>
+
+                            <li class="list-group-item">
+
+                                <input class="form-check-input me-1 mt-2" type="checkbox" value="" id="firstCheckbox">
+  
+                                  <label class="form-check-label" for=" for="feature_1">
+  
+                                      <span class="d-block fs-4 lh-1">
+                                          Feature 1
+                                      </span>
+  
+                                      <span class="fs-6 text-secondary align-top">
+                                          Small description of the feature
+                                      </span>
+  
+                                  </label>
+  
+                            </li>
+                            
+                            <li class="list-group-item">
+
+                                <input class="form-check-input me-1 mt-2" type="checkbox" value="" id="firstCheckbox">
+  
+                                  <label class="form-check-label" for=" for="feature_1">
+  
+                                      <span class="d-block fs-4 lh-1">
+                                          Feature 1
+                                      </span>
+  
+                                      <span class="fs-6 text-secondary align-top">
+                                          Small description of the feature
+                                      </span>
+  
+                                  </label>
+  
+                            </li>
+                            
+                        </ul>
+    
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-3">
+                                Save
+                            </button>
+                        </div>
+    
+                    </form>
+
+                </div>
+
             </div>
             <!-- /Main Content -->
 

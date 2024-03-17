@@ -16,4 +16,5 @@ th img {
 
 ._b-r {
     border: 2px solid red;
+    min-height: 100px;
 }
