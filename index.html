@@ -99,7 +99,7 @@
 
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                Exit
+                                Log Out
                             </a>
                         </li>
 
@@ -123,7 +123,8 @@
             <!-- Sidebar Menu -->
             <div class="d-flex flex-column d-none d-md-flex p-3 text-bg-dark col-md-4 col-lg-3">
 
-                <a href="index.html" class="d-flex align-items-center mb-1 mb-md-0 me-md-auto text-white text-decoration-none">
+                <a href="index.html"
+                    class="d-flex align-items-center mb-1 mb-md-0 me-md-auto text-white text-decoration-none">
 
                     <span class="fs-4">
                         Bootstrap Dashboard
@@ -227,7 +228,8 @@
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
                         data-bs-toggle="dropdown" aria-expanded="false">
 
-                        <img src="https://picsum.photos/id/237/200/300" alt="Profile image" width="32" height="32" class="rounded-circle me-2">
+                        <img src="https://picsum.photos/id/237/200/300" alt="Profile image" width="32" height="32"
+                            class="rounded-circle me-2">
 
                         <strong>Sandro Sallusti</strong>
 
@@ -248,7 +250,7 @@
                         </li>
 
                         <li>
-                            <a class="dropdown-item" href="#">Sign out</a>
+                            <a class="dropdown-item" href="#">Log Out</a>
                         </li>
 
                     </ul>
@@ -258,16 +260,144 @@
             <!-- /Sidebar Menu -->
 
             <!-- Main Content -->
-            <div class="col-md-8 col-lg-9 overflow-scroll vh-100">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ullam, nesciunt possimus neque molestiae officia quam libero unde repudiandae minima non veniam doloribus odio? Optio esse modi nam fugit aut?
-                Dignissimos cupiditate, explicabo aspernatur porro quis in corrupti ea enim quas eaque inventore fugiat laboriosam quaerat dolorem fuga, at assumenda maxime est. Distinctio cumque magni explicabo pariatur voluptate reprehenderit praesentium.
-                Accusantium nisi ipsum officia, sit quaerat adipisci exercitationem, repudiandae rerum itaque rem dolores modi! Praesentium possimus iste esse? Suscipit explicabo accusantium vero nisi nesciunt labore laboriosam beatae provident repellendus rerum!
-                Voluptas, magni est officia assumenda dicta numquam repellendus commodi rerum cupiditate exercitationem vel earum aut eos quae sapiente incidunt, magnam soluta quas quod voluptatibus impedit harum recusandae rem? Incidunt, dolore!
-                Omnis id veniam architecto excepturi. Dolor temporibus, culpa ullam fugit deserunt asperiores quos officiis, cumque, ab labore ex enim totam ipsam expedita veniam molestias cum vitae commodi cupiditate dolorum eligendi?
-                Quae animi harum eos cum reprehenderit quidem, totam, fugit incidunt cumque placeat laborum voluptatum fuga. Eum vero saepe sint porro asperiores, dolore, necessitatibus praesentium, iusto hic explicabo veritatis ipsum eaque!
-                Animi ipsum quos nemo ratione cum cupiditate. Quisquam, quasi assumenda. Doloremque, sint iure voluptatibus, libero voluptate et perferendis expedita quod placeat quasi repudiandae. Quas, veritatis. Eius in quo ullam facilis.
-                Mollitia, nam dolorum! Quo, pariatur dolorum! Ipsa, numquam! Quaerat voluptatum voluptates animi perferendis, ipsum harum obcaecati laborum alias similique iure ratione, fuga provident? Dolorum necessitatibus itaque, possimus vero minima atque!
-                
+            <div id="products" class="col-md-8 col-lg-9 overflow-y-scroll vh-100">
+
+                <!-- Found Products -->
+                <div class="d-flex justify-content-between align-items-center py-2 px-1">
+
+                    <h2 class="fs-4">10 Products found</h2>
+
+                    <ul class="list-group list-group-horizontal">
+
+                        <li class="list-group-item">
+                            <a class="text-decoration-none text-dark" href="">
+                                Export
+                            </a>
+                        </li>
+
+                        <li class="list-group-item">
+                            <a class="text-decoration-none text-dark" href="form.html">
+                                New
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- /Found Products -->
+
+                <hr class="m-0">
+
+                <!-- Products Table -->
+                <table class="table align-middle table-hover">
+
+                    <thead>
+
+                        <tr>
+
+                            <th scope="col-6">
+                                Name
+                            </th>
+
+                            <th class="text-center" scope="col-2">
+                                Price
+                            </th>
+
+                            <th class="text-center" scope="col-2">
+                                State
+                            </th>
+
+                            <th class="text-center" scope="col-2">
+                                Actions
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <th class="d-flex align-items-center justify-content-start">
+
+
+                                <img 
+                                class="object-fit-fill border rounded"
+                                src="https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI"
+                                alt="">
+
+
+                                <div class="ms-2 overflow-x-auto">
+
+                                    <h3 class="fs-5 mb-1">Hipster Tools Set</h3>
+
+                                    <span class="fs-6 fw-light d-none d-lg-flex">
+                                        Includes a sketchbook, metal pen, sunglasses and bow tie.
+                                    </span>
+
+                                </div>
+
+                            </th>
+
+                            <td class="text-center">
+                                350,00 €
+                            </td>
+
+                            <td class="text-center text-success">
+
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg" width="35" 
+                                height="35" 
+                                fill="currentColor"
+                                class="border border-2 border-success rounded-circle p-1"
+                                viewBox="0 0 16 16">
+                                    <path
+                                    d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+                                </svg>
+
+                            </td>
+
+                            <td class="text-center">
+
+                                <div class="row justify-content-evenly">
+
+                                    <svg 
+                                    xmlns="http://www.w3.org/2000/svg" width="30" 
+                                    height="30"
+                                    fill="currentColor" 
+                                    class="border border-2 border-success rounded-1 p-1 col-4"
+                                    viewBox="0 0 16 16">
+                                        <path
+                                        d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                                    </svg>
+
+
+                                    <svg 
+                                    xmlns="http://www.w3.org/2000/svg" width="30" 
+                                    height="30"
+                                    fill="currentColor" 
+                                    class="border border-2 border-success rounded-1 p-1 col-4"
+                                    viewBox="0 0 16 16">
+                                        <path
+                                        d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5" />
+                                    </svg>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                        <tr class="vh-1 _b-r">
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+                <!-- /Products Table -->
+
             </div>
             <!-- /Main Content -->
 
