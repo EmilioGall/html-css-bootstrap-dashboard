@@ -323,7 +323,7 @@
                     </thead>
                     <!-- /Header Table -->
 
-                    <!-- Delete Modal -->
+                    <!-- Delete Product Modal -->
                     <div class="modal fade" 
                     id="delete-product" 
                     tabindex="-1" 
@@ -353,17 +353,16 @@
                                         <div class="row flex-nowrap">
 
                                             <div class="col-6 d-flex justify-content-center p-0 border-end border-grey">
-                                                <button type="button" class="btn text-primary">
+                                                <a type="button" class="p-2 text-primary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
                                                     Save changes
-                                                </button>
+                                                </a>
                                             </div>
 
                                             <div class="col-6 d-flex justify-content-center p-0 border-start border-grey">
 
-                                                <button type="button" class="btn text-primary"
-                                                data-bs-dismiss="modal">
+                                                <a type="button" class="p-2 text-primary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#"                                               data-bs-dismiss="modal">
                                                     Close
-                                                </button>
+                                                </a>
 
                                             </div>
 
@@ -378,13 +377,14 @@
                         </div>
 
                     </div>
-                    <!-- /Delete Modal -->
+                    <!-- /Delete Product Modal -->
 
                     <!-- Product 1 -->
                     <tbody>
 
                         <tr>
 
+                            <!-- Image and Description Cell -->
                             <th class="d-flex align-items-center justify-content-start">
 
 
@@ -404,11 +404,15 @@
                                 </div>
 
                             </th>
+                            <!-- /Image and Description Cell -->
 
+                            <!-- Price Cell -->
                             <td class="text-center d-none d-md-table-cell">
                                 350,00€
                             </td>
+                            <!-- /Price Cell -->
 
+                            <!-- State Cell -->
                             <td class="text-center text-success d-none d-md-table-cell">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                                     class="border border-2 border-success rounded-circle p-1" viewBox="0 0 16 16">
@@ -416,10 +420,12 @@
                                         d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
                                 </svg>
                             </td>
+                            <!-- /State Cell -->
 
+                            <!-- Actions Cell -->
                             <td class="text-center">
 
-                                <div class="d-flex flex-md-row justify-content-center flex-column">
+                                <div class="d-flex flex-column flex-md-row justify-content-center">
 
                                     <a type="button" href="" class="p-1">
 
@@ -433,8 +439,8 @@
 
                                     </a>
 
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="btn" data-bs-toggle="modal"
+                                    <!-- Delete Product Button -->
+                                    <a type="button" class="p-1" data-bs-toggle="modal"
                                         data-bs-target="#delete-product">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
@@ -445,11 +451,13 @@
                                                 d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5" />
                                         </svg>
 
-                                    </button>
+                                    </a>
+                                    <!-- /Delete Product Button -->
 
                                 </div>
 
                             </td>
+                            <!-- /Actions Cell -->
 
                         </tr>
 
@@ -461,6 +469,7 @@
 
                         <tr>
 
+                            <!-- Image and Description Cell -->
                             <th class="d-flex align-items-center justify-content-start">
 
 
@@ -480,11 +489,15 @@
                                 </div>
 
                             </th>
+                            <!-- /Image and Description Cell -->
 
+                            <!-- Price Cell -->
                             <td class="text-center d-none d-md-table-cell">
                                 350,00€
                             </td>
+                            <!-- /Price Cell -->
 
+                            <!-- State Cell -->
                             <td class="text-center text-danger d-none d-md-table-cell">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                                     class="border border-2 border-danger rounded-circle p-1" viewBox="0 0 16 16">
@@ -492,12 +505,14 @@
                                         d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
                                 </svg>
                             </td>
+                            <!-- /State Cell -->
 
+                            <!-- Actions Cell -->
                             <td class="text-center">
 
-                                <div class="d-flex flex-md-row justify-content-center flex-column">
+                                <div class="d-flex flex-column flex-md-row justify-content-center">
 
-                                    <a href="" class="p-1">
+                                    <a type="button" href="" class="p-1">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                             fill="currentColor"
@@ -509,7 +524,9 @@
 
                                     </a>
 
-                                    <a href="" class="p-1">
+                                    <!-- Delete Product Button -->
+                                    <a type="button" class="p-1" data-bs-toggle="modal"
+                                        data-bs-target="#delete-product">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                             fill="currentColor"
@@ -520,10 +537,12 @@
                                         </svg>
 
                                     </a>
+                                    <!-- /Delete Product Button -->
 
                                 </div>
 
                             </td>
+                            <!-- /Actions Cell -->
 
                         </tr>
 
@@ -535,6 +554,7 @@
 
                         <tr>
 
+                            <!-- Image and Description Cell -->
                             <th class="d-flex align-items-center justify-content-start">
 
 
@@ -554,11 +574,15 @@
                                 </div>
 
                             </th>
+                            <!-- /Image and Description Cell -->
 
+                            <!-- Price Cell -->
                             <td class="text-center d-none d-md-table-cell">
                                 350,00€
                             </td>
+                            <!-- /Price Cell -->
 
+                            <!-- State Cell -->
                             <td class="text-center text-success d-none d-md-table-cell">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                                     class="border border-2 border-success rounded-circle p-1" viewBox="0 0 16 16">
@@ -566,12 +590,14 @@
                                         d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
                                 </svg>
                             </td>
+                            <!-- /State Cell -->
 
+                            <!-- Actions Cell -->
                             <td class="text-center">
 
-                                <div class="d-flex flex-md-row justify-content-center flex-column">
+                                <div class="d-flex flex-column flex-md-row justify-content-center">
 
-                                    <a href="" class="p-1">
+                                    <a type="button" href="" class="p-1">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                             fill="currentColor"
@@ -583,7 +609,9 @@
 
                                     </a>
 
-                                    <a href="" class="p-1">
+                                    <!-- Delete Product Button -->
+                                    <a type="button" class="p-1" data-bs-toggle="modal"
+                                        data-bs-target="#delete-product">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                             fill="currentColor"
@@ -594,10 +622,12 @@
                                         </svg>
 
                                     </a>
+                                    <!-- /Delete Product Button -->
 
                                 </div>
 
                             </td>
+                            <!-- /Actions Cell -->
 
                         </tr>
 
