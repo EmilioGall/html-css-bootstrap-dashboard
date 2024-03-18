@@ -40,11 +40,9 @@
                 </a>
 
                 <!-- Burger Button -->
-                <button class="navbar-toggler" type="button" 
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
 
                     <span class="navbar-toggler-icon"></span>
 
@@ -124,7 +122,8 @@
             <!-- Sidebar Menu -->
             <div class="d-md-flex flex-column collapse p-3 text-bg-dark col-md-4 col-lg-3" id="navbarSupportedContent">
 
-                <a href="index.html" class="d-none d-md-flex align-items-center mb-1 mb-md-0 me-md-auto text-white text-decoration-none">
+                <a href="index.html"
+                    class="d-none d-md-flex align-items-center mb-1 mb-md-0 me-md-auto text-white text-decoration-none">
 
                     <span class="fs-4">
                         Bootstrap Dashboard
@@ -269,27 +268,27 @@
 
                     <!-- Header Form New Product -->
                     <div class="text-center my-4 mx-3">
-    
+
                         <h1>Create new product profile</h1>
-    
+
                         <p>
                             The fields signd with an asterisk (*) are mandatory.
                             <br>
                             Images must be in PNG format and must not exceed 4MB in size.
                         </p>
-    
+
                     </div>
                     <!-- /Header Form New Product -->
-    
+
                     <!-- Form New Product -->
                     <form class="row g-3">
-    
+
                         <div class="col-12 col-lg-7">
-                            
+
                             <div class="container-fluid">
 
                                 <div class="row">
-            
+
                                     <!-- Name Input -->
                                     <div class="col-12 col-md-2 mb-2">
 
@@ -301,7 +300,8 @@
 
                                     <div class="col-12 col-md-10 mb-2">
 
-                                        <input type="text" class="form-control col-12 col-md-8" id="name" placeholder="Hipster Tools Set">
+                                        <input type="text" class="form-control col-12 col-md-8" id="name"
+                                            placeholder="Hipster Tools Set">
 
                                     </div>
                                     <!-- Name Input -->
@@ -346,60 +346,58 @@
                                 </div>
 
                                 <!-- Message Box Input -->
-                                <div class="form-floating mb-2">
+                                <div class="mb-2">
 
-                                    <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Insert a description of the product, max. 1000 caracters." id="description" rows="4" cols="1"></textarea>
 
-                                        <textarea class="form-control" placeholder="Insert a description of the product, max. 1000 caracters." id="description">
+                                    <label for="description">
+                                        Insert a description of the product, max. 1000 caracters.
+                                    </label>
 
-                                        </textarea>
-
-                                        <label for="description">
-                                            Insert a description of the product, max. 1000 caracters.
-                                        </label>
-
-                                    </div>
-            
                                 </div>
                                 <!-- /Message Box Input -->
 
                                 <!-- Image Input -->
                                 <div class="input-group mb-2">
-            
+
                                     <input type="file" class="form-control" id="inputGroupFile02">
-            
+
                                     <label class="input-group-text" for="inputGroupFile02">Image</label>
-            
+
                                 </div>
                                 <!-- /Image Input -->
 
                                 <!-- State Selection Input -->
                                 <div class="btn-group fs-6 fs-md-3 col-auto" role="group" aria-label="product-state">
-            
-                                    <input type="radio" class="btn-check" name="product-state" id="available" autocomplete="off" checked>
-            
+
+                                    <input type="radio" class="btn-check" name="product-state" id="available"
+                                        autocomplete="off" checked>
+
                                     <label class="btn btn-outline-secondary btn-sm" for="available">
                                         Available
                                     </label>
-            
-                                    <input type="radio" class="btn-check" name="product-state" id="out-stock" autocomplete="off" checked>
-            
+
+                                    <input type="radio" class="btn-check" name="product-state" id="out-stock"
+                                        autocomplete="off" checked>
+
                                     <label class="btn btn-outline-secondary btn-sm" for="out-stock">
                                         Out of Stock
                                     </label>
-            
-                                    <input type="radio" class="btn-check" name="product-state" id="out-production" autocomplete="off" checked>
-            
+
+                                    <input type="radio" class="btn-check" name="product-state" id="out-production"
+                                        autocomplete="off" checked>
+
                                     <label class="btn btn-outline-secondary btn-sm" for="out-production">
                                         Out of Production
                                     </label>
-                                    
-                                    <input type="radio" class="btn-check" name="product-state" id="coming-soon" autocomplete="off">
-            
+
+                                    <input type="radio" class="btn-check" name="product-state" id="coming-soon"
+                                        autocomplete="off">
+
                                     <label class="btn btn-outline-secondary btn-sm" for="coming-soon">
                                         Coming soon
                                     </label>
-            
+
                                 </div>
                                 <!-- /State Selection Input -->
 
@@ -412,7 +410,8 @@
 
                             <li class="list-group-item">
 
-                              <input class="form-check-input me-1 mt-1" type="checkbox" value="feature_1" id="feature_1">
+                                <input class="form-check-input me-1 mt-1" type="checkbox" value="feature_1"
+                                    id="feature_1">
 
                                 <label class="form-check-label" for="feature_1">
 
@@ -430,97 +429,102 @@
 
                             <li class="list-group-item">
 
-                                <input class="form-check-input me-1 mt-1" type="checkbox" value="feature_2" id="feature_2">
-  
-                                  <label class="form-check-label" for="feature_2">
-  
-                                      <span class="d-block fs-5 lh-1">
-                                          Feature 2
-                                      </span>
-  
-                                      <span class="fs-6 text-secondary align-top">
-                                          Small description of the feature
-                                      </span>
-  
-                                  </label>
-  
+                                <input class="form-check-input me-1 mt-1" type="checkbox" value="feature_2"
+                                    id="feature_2">
+
+                                <label class="form-check-label" for="feature_2">
+
+                                    <span class="d-block fs-5 lh-1">
+                                        Feature 2
+                                    </span>
+
+                                    <span class="fs-6 text-secondary align-top">
+                                        Small description of the feature
+                                    </span>
+
+                                </label>
+
                             </li>
 
                             <li class="list-group-item">
 
-                                <input class="form-check-input me-1 mt-1" type="checkbox" value="feature_3" id="feature_3">
-  
-                                  <label class="form-check-label" for="feature_3">
-  
-                                      <span class="d-block fs-5 lh-1">
-                                          Feature 3
-                                      </span>
-  
-                                      <span class="fs-6 text-secondary align-top">
-                                          Small description of the feature
-                                      </span>
-  
-                                  </label>
-  
+                                <input class="form-check-input me-1 mt-1" type="checkbox" value="feature_3"
+                                    id="feature_3">
+
+                                <label class="form-check-label" for="feature_3">
+
+                                    <span class="d-block fs-5 lh-1">
+                                        Feature 3
+                                    </span>
+
+                                    <span class="fs-6 text-secondary align-top">
+                                        Small description of the feature
+                                    </span>
+
+                                </label>
+
                             </li>
 
                             <li class="list-group-item">
 
-                                <input class="form-check-input me-1 mt-1" type="checkbox" value="feature_4" id="feature_4">
-  
-                                  <label class="form-check-label" for="feature_4">
-  
-                                      <span class="d-block fs-5 lh-1">
-                                          Feature 4
-                                      </span>
-  
-                                      <span class="fs-6 text-secondary align-top">
-                                          Small description of the feature
-                                      </span>
-  
-                                  </label>
-  
+                                <input class="form-check-input me-1 mt-1" type="checkbox" value="feature_4"
+                                    id="feature_4">
+
+                                <label class="form-check-label" for="feature_4">
+
+                                    <span class="d-block fs-5 lh-1">
+                                        Feature 4
+                                    </span>
+
+                                    <span class="fs-6 text-secondary align-top">
+                                        Small description of the feature
+                                    </span>
+
+                                </label>
+
                             </li>
 
                             <li class="list-group-item">
 
-                                <input class="form-check-input me-1 mt-1" type="checkbox" value="feature_5" id="feature_5">
-  
-                                  <label class="form-check-label" for="feature_5">
-  
-                                      <span class="d-block fs-5 lh-1">
-                                          Feature 5
-                                      </span>
-  
-                                      <span class="fs-6 text-secondary align-top">
-                                          Small description of the feature
-                                      </span>
-  
-                                  </label>
-  
+                                <input class="form-check-input me-1 mt-1" type="checkbox" value="feature_5"
+                                    id="feature_5">
+
+                                <label class="form-check-label" for="feature_5">
+
+                                    <span class="d-block fs-5 lh-1">
+                                        Feature 5
+                                    </span>
+
+                                    <span class="fs-6 text-secondary align-top">
+                                        Small description of the feature
+                                    </span>
+
+                                </label>
+
                             </li>
-                            
+
                             <li class="list-group-item">
 
-                                <input class="form-check-input me-1 mt-1" type="checkbox" value="feature_6" id="feature_6">
-  
-                                  <label class="form-check-label" for="feature_6">
-  
-                                      <span class="d-block fs-5 lh-1">
-                                          Feature 6
-                                      </span>
-  
-                                      <span class="fs-6 text-secondary align-top">
-                                          Small description of the feature
-                                      </span>
-  
-                                  </label>
-  
+                                <input class="form-check-input me-1 mt-1" type="checkbox" value="feature_6"
+                                    id="feature_6">
+
+                                <label class="form-check-label" for="feature_6">
+
+                                    <span class="d-block fs-5 lh-1">
+                                        Feature 6
+                                    </span>
+
+                                    <span class="fs-6 text-secondary align-top">
+                                        Small description of the feature
+                                    </span>
+
+                                </label>
+
                             </li>
 
                         </ul>
                         <!-- /Checkbox List -->
-    
+
                         <!-- Save Button -->
                         <div class="col-auto">
                             <button type="submit" class="btn btn-primary mb-3">
@@ -528,7 +532,7 @@
                             </button>
                         </div>
                         <!-- /Save Button -->
-    
+
                     </form>
                     <!-- /Form New Product -->
 
